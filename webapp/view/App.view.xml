@@ -1,0 +1,35 @@
+<mvc:View 
+controllerName="sap.ui.demo.project1.controller.App"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc">
+    <Button text="Say Hi" press=".onShowHello"/>
+    <Input 
+    value="{/empStr/eName}"
+
+    width ="50%"/>
+     <Input 
+    value="{/empStr/salary}"
+
+    width ="50%"/>
+
+    
+
+ 
+
+
+    </mvc:View>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
