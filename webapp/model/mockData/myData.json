@@ -3,9 +3,10 @@
     "empStr": {
         "empNo": 100,
         "eName": "krish",
-        "  ": 15000,
+        "salary": 15000,
         "currency": "EUR",
-        "smoker": false
+        "smoker": false,
+        "alia":true
     },
     "empTab": [
         {

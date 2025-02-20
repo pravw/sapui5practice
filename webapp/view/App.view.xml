@@ -1,22 +1,35 @@
 <mvc:View 
 controllerName="sap.ui.demo.project1.controller.App"
     xmlns="sap.m"
+    xmlns:f= "sap.ui.layout.form"
     xmlns:mvc="sap.ui.core.mvc">
+    <App >
+    <Page>
+    <content>
+      
+    <f:SimpleForm>
+    <f:content>
+    <Label text = "Emp ID"></Label >
+    <Input value="{/empStr/empNo}" enabled="{/empStr/alia}" width ="50%"/>
+    <Label text = "Emp Name"></Label>
+    <Input value= "{/empStr/eName}" width ="50%"/>
+    <Label text = "Emp Slalary"></Label >
+    <Input value="{= ${/empStr/eName} === 'krish'? 5000 : ${/empStr/salary} }" 
+             enabled="{= ${/empStr/eName} === 'krish'? false : true}"  
+             width ="50%"/>
+    <Label text = "Currency"></Label >
+    <Input value= "{/empStr/currency}" width ="50%"/>
+    </f:content>
+</f:SimpleForm>
     <Button text="Say Hi" press=".onShowHello"/>
-    <Input 
-    value="{/empStr/eName}"
-
-    width ="50%"/>
-     <Input 
-    value="{/empStr/salary}"
-
-    width ="50%"/>
-
-    
-
- 
+  
+    <Switch change="onSwtChange"></Switch>
+    </content>
 
 
+
+</Page>
+    </App>
     </mvc:View>
 
 

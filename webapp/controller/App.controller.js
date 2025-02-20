@@ -12,7 +12,18 @@ sap.ui.define([
         this.createModel();
        },
        
-       
+       onSwtChange: function(){
+
+        var oModel = sap.ui.getCore().getModel();
+
+        if(oModel.getProperty("/empStr/alia")=== true){
+            oModel.setProperty("/empStr/alia", false);
+        }else{
+            oModel.setProperty("/empStr/alia", true);
+        }
+
+       },
+
         createModel:function(){
         //     // step1 create a brand new model obj
         //     var oModel = new sap.ui.model.json.JSONModel()
