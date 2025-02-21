@@ -5,12 +5,12 @@ sap.ui.define(
         return {
 
 
-            createJSONModel: function () {
+            createJSONModel: function (filePath) {
                 var oModel = new JSONModel();
                 // oModel.setData();
 
                 // load the data from the my data.json  only in java script need name space here 
-                oModel.loadData("model/mockData/myData.json");
+                oModel.loadData(filePath);
                 return oModel;
             }
 

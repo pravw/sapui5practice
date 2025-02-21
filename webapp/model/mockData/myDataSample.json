@@ -1,0 +1,41 @@
+{
+
+    "empStr": {
+        "empNo": 500,
+        "eName": "krishna",
+        "salary": 15000,
+        "currency": "EUR",
+        "smoker": false,
+        "alia":true
+    },
+    "empTab": [
+        {
+            "empNo": 100,
+            "eName": "praveen",
+            "salary": 15000,
+            "currency": "GBP",
+            "smoker": false
+        },
+        {
+            "empNo": 200,
+            "eName": "ramkumar",
+            "salary": 16000,
+            "currency": "EUR",
+            "smoker": false
+        },
+        {
+            "empNo": 300,
+            "eName": "kishoreram",
+            "salary": 18000,
+            "currency": "INR",
+            "smoker": false
+        },
+        {
+            "empNo": 400,
+            "eName": "sivakumar",
+            "salary": 18000,
+            "currency": "INR",
+            "smoker": false
+        }
+    ]
+}

@@ -8,14 +8,14 @@ controllerName="sap.ui.demo.project1.controller.App"
     <Page>
     
     <content>
-      <t:Table rows ="{/empTab}" >
+      <t:Table rows ="{hello>/empTab}" selectionMode="Single" >
       <t:columns>
        <t:Column >
        <t:label>
        <Label text = "Emp No" ></Label>
        </t:label>
        <t:template>
-      <Text text="{empNo}"></Text>
+      <Text text="{hello>empNo}"></Text>
        </t:template>
        </t:Column>
               <t:Column >
@@ -23,21 +23,21 @@ controllerName="sap.ui.demo.project1.controller.App"
        <Label text = "Emp Name" ></Label>
        </t:label>
        <t:template>
-      <Text text="{eName}"></Text>
+      <Text text="{hello>eName}"></Text>
        </t:template>
        </t:Column>       <t:Column >
        <t:label>
        <Label text = "Emp Salary" ></Label>
        </t:label>
        <t:template>
-      <Text text="{salary}"></Text>
+      <Text text="{hello>salary}"></Text>
        </t:template>
        </t:Column>       <t:Column >
        <t:label>
        <Label text = "Currency" ></Label>
        </t:label>
        <t:template>
-      <Text text="{currency}"></Text>
+      <Text text="{hello> currency}"></Text>
        </t:template>
        </t:Column>
       </t:columns>

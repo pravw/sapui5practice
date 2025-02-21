@@ -70,15 +70,20 @@ sap.ui.define([
         //     });
 
 
-         var oModel=  model.createJSONModel();
+         var oModel=  model.createJSONModel("model/mockData/myData.json");
         // step 3 make model aware to the appliacation
             sap.ui.getCore().setModel(oModel);
 
+            // named Model
+
+
+            var oModel1 =  model.createJSONModel("model/mockData/myDataSample.json");
+            sap.ui.getCore().setModel(oModel1,"hello");
+
+              
 
 
 
-            // var oModel = new JSONModel(oData);
-            // this.getView().setModel(oModel)
 
 
 
