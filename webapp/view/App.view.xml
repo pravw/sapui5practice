@@ -2,11 +2,46 @@
 controllerName="sap.ui.demo.project1.controller.App"
     xmlns="sap.m"
     xmlns:f= "sap.ui.layout.form"
+    xmlns:t="sap.ui.table"
     xmlns:mvc="sap.ui.core.mvc">
     <App >
     <Page>
+    
     <content>
-      
+      <t:Table rows ="{/empTab}" >
+      <t:columns>
+       <t:Column >
+       <t:label>
+       <Label text = "Emp No" ></Label>
+       </t:label>
+       <t:template>
+      <Text text="{empNo}"></Text>
+       </t:template>
+       </t:Column>
+              <t:Column >
+       <t:label>
+       <Label text = "Emp Name" ></Label>
+       </t:label>
+       <t:template>
+      <Text text="{eName}"></Text>
+       </t:template>
+       </t:Column>       <t:Column >
+       <t:label>
+       <Label text = "Emp Salary" ></Label>
+       </t:label>
+       <t:template>
+      <Text text="{salary}"></Text>
+       </t:template>
+       </t:Column>       <t:Column >
+       <t:label>
+       <Label text = "Currency" ></Label>
+       </t:label>
+       <t:template>
+      <Text text="{currency}"></Text>
+       </t:template>
+       </t:Column>
+      </t:columns>
+      </t:Table>
     <f:SimpleForm>
     <f:content>
     <Label text = "Emp ID"></Label >
