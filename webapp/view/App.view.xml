@@ -3,19 +3,20 @@ controllerName="sap.ui.demo.project1.controller.App"
     xmlns="sap.m"
     xmlns:f= "sap.ui.layout.form"
     xmlns:t="sap.ui.table"
+    xmlns:core="sap.ui.core"
     xmlns:mvc="sap.ui.core.mvc">
     <App >
     <Page>
     
     <content>
-      <t:Table rows ="{hello>/empTab}" selectionMode="Single" >
+      <t:Table rows ="{/empTab}" selectionMode="Single" >
       <t:columns>
        <t:Column >
        <t:label>
        <Label text = "Emp No" ></Label>
        </t:label>
        <t:template>
-      <Text text="{hello>empNo}"></Text>
+      <Text text="{empNo}"></Text>
        </t:template>
        </t:Column>
               <t:Column >
@@ -23,24 +24,59 @@ controllerName="sap.ui.demo.project1.controller.App"
        <Label text = "Emp Name" ></Label>
        </t:label>
        <t:template>
-      <Text text="{hello>eName}"></Text>
+      <Text text="{eName}"></Text>
        </t:template>
        </t:Column>       <t:Column >
        <t:label>
        <Label text = "Emp Salary" ></Label>
        </t:label>
        <t:template>
-      <Text text="{hello>salary}"></Text>
+      <Text text="{salary}"></Text>
        </t:template>
        </t:Column>       <t:Column >
        <t:label>
        <Label text = "Currency" ></Label>
        </t:label>
        <t:template>
-      <Text text="{hello> currency}"></Text>
+      <Text text="{currency}"></Text>
        </t:template>
        </t:Column>
-      </t:columns>
+       <t:Column >
+       <t:label>
+       <Label text = "smoker" ></Label>
+       </t:label>
+       <t:template>
+      <CheckBox selected="{smoker}"></CheckBox>
+       </t:template>
+       </t:Column><t:Column >
+       <t:label>
+       <Label text = "gender" ></Label>
+       </t:label>
+       <t:template>
+      <Image src="{gender}" width="20px" height="20px"></Image>
+       </t:template>
+       </t:Column><t:Column >
+       <t:label>
+       <Label text = "mStat" ></Label>
+       </t:label>
+       <t:template>
+       <Select id="idDropDown"  selectedKey="{mStat}">
+       <items>
+       <core:Item key="M" text="Married"></core:Item>
+       <core:Item key="S" text="Single"></core:Item>
+       </items>
+       </Select>
+      <!-- <Text text="{mStat}"></Text> -->
+       </t:template>
+       </t:Column><t:Column >
+       <t:label>
+       <Label text = "rating" ></Label>
+       </t:label>
+       <t:template>
+      <RatingIndicator value="{rating}"></RatingIndicator>
+       </t:template>
+       </t:Column>
+      </t:columns>  
       </t:Table>
     <f:SimpleForm>
     <f:content>
