@@ -6,10 +6,11 @@ controllerName="sap.ui.demo.project1.controller.App"
     xmlns:core="sap.ui.core"
     xmlns:mvc="sap.ui.core.mvc">
     <App >
-    <Page>
+    <Page title = "hello hi i am UI5">
     
     <content>
-      <t:Table rows ="{/empTab}" selectionMode="Single" >
+      <t:Table rows ="{/empTab}" selectionMode="Single"   rowSelectionChange="onSelect">
+      
       <t:columns>
        <t:Column >
        <t:label>
@@ -78,18 +79,18 @@ controllerName="sap.ui.demo.project1.controller.App"
        </t:Column>
       </t:columns>  
       </t:Table>
-    <f:SimpleForm>
+    <f:SimpleForm  editable = "true" id="idContra">
     <f:content>
     <Label text = "Emp ID"></Label >
-    <Input value="{/empStr/empNo}" enabled="{/empStr/alia}" width ="50%"/>
+    <Input value="{empNo}" enabled="{/empStr/alia}" width ="50%"/>
     <Label text = "Emp Name"></Label>
-    <Input value= "{/empStr/eName}" width ="50%"/>
+    <Input value= "{eName}" width ="50%"/>
     <Label text = "Emp Slalary"></Label >
-    <Input value="{= ${/empStr/eName} === 'krish'? 5000 : ${/empStr/salary} }" 
+    <Input value="{salary}" 
              enabled="{= ${/empStr/eName} === 'krish'? false : true}"  
              width ="50%"/>
     <Label text = "Currency"></Label >
-    <Input value= "{/empStr/currency}" width ="50%"/>
+    <Input value= "{currency}" width ="50%"/>
     </f:content>
 </f:SimpleForm>
     <Button text="Say Hi" press=".onShowHello"/>
